@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+hr {
+  text-decoration: none;
+}
+
+/* PRIMER BANNER */
+
+.logotipo {
+  position: absolute;
+  z-index: 5;
+  top: 1%;
+  left: 1%;
+  max-width: 8%;
+  max-height: 8%;
+}
+
+.cover-image {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: visible;
+  width: 100%;
+}
+
+.first-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 68%;
+  height: 70%;
+  margin-top: 12%;
+}
+
+.first-banner h2 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.first-banner p {
+  font-size: 0.85em;
+  margin-top: 2.5%;
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+}
+
+@media (min-width: 600px) {
+  .first-banner h2 {
+    font-size: 25px;
+  }
+
+  .first-banner p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 860px) {
+  .first-banner h2 {
+    font-size: 40px;
+  }
+
+  .first-banner p {
+    font-size: 28px;
+  }
+
+  .first-banner .btn-hero {
+    font-size: 18px;
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .first-banner h2 {
+    font-size: 50px;
+  }
+
+  .first-banner p {
+    font-size: 35px;
+  }
+
+  .first-banner .btn-hero {
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .first-banner h2 {
+    font-size: 55px;
+  }
+
+  .first-banner p {
+    font-size: 55px;
+    font-weight: 600;
+  }
+}
+
+.first-banner img {
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+
+.first-banner button {
+  position: relative;
+  margin-top: -3%;
+  width: 40%;
+  max-width: 75%;
+  font-size: 0.7em;
+  background-color: #fff;
+}
+
+.first-banner button:hover {
+  background-color: #012579;
+  color: #fff;
+}
+
+@media (min-width: 550px) {
+  .first-banner button {
+    height: 30px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .first-banner button {
+    height: 40px;
+    font-size: 1.1em;
+    border: 2px solid #fff;
+    margin-top: -2.5%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .first-banner img {
+    margin-top: 3%;
+  }
+
+  .first-banner button {
+    margin-top: -1.5%;
+    font-size: 1.3em;
+    height: 50px;
+  }
+}
+
+/* FIN */
+
+/* segundo banner */
+.second-section {
+  margin-top: 33%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-img {
+  width: 60%;
+}
+
+.second-part {
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+}
+
+.second-title {
+  color: #002088;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.second-parag {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* tercera seccion */
+
+.third-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-content {
+  margin-left: 1rem;
+  width: 45%;
+}
+
+.third-img {
+  width: 50%;
+}
+
+.parag-third {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* cuarta seccion */
+
+.plane-section {
+  display: flex;
+  background-image: url("./assets/avion-landing.jpg");
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.empty-div {
+  width: 49%;
+}
+
+.container-fourth {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.fourth-text {
+  color: #002088;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.container-fourth button {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* productos seccion */
+
+.fourth-section {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.row-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.row {
+  box-shadow: 1px 1px 4px 1px #cfcfcf;
+  border-radius: 1rem;
+  border: 2px solid #fff;
+}
+
+.row:hover {
+  border: 2px solid #012bb3;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-box {
+  width: 99%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.icon {
+  position: absolute;
+  left: 35%;
+  bottom: -7%;
+  color: #fff;
+  font-size: 1rem;
+  background: #012bb3;
+  border: 2px solid #fff;
+  padding: 0.4rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.availability {
+  color: green;
+  font-weight: 600;
+  text-align: start;
+  margin: 0;
+  margin-top: 0.5rem;
+}
